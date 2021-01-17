@@ -1,0 +1,13 @@
+{
+    "name": "filipemagalhaes/shape",
+    "type": "project",
+    "authors": [
+        {
+            "name": "LipeTuga",
+            "email": "mie10010@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
