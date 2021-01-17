@@ -49,4 +49,18 @@ class Shape {
     {
         return clone $this;
     }
+
+    protected function getId()
+    {
+        return $this->id;
+    }
+
+    public function getStandartObject()
+    {
+        $obj = new \stdClass();
+        $obj->width = $this->width;
+        $obj->height = $this->height;
+        $obj->id = $this->id;
+        return $obj;
+    }
 }

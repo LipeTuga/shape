@@ -51,11 +51,23 @@ class ShapeTest extends TestCase {
     }
 
     /** @test */
-    public function the_area_must_be_calculated()
+    public function can_return_a_standart_object_with_the_properties()
+    {
+        $new_object = $this->shape->getStandartObject();
+        $this->assertEquals(2, $new_object->width);
+        $this->assertEquals(3, $new_object->height);
+    }
+
+
+
+    /** @test */
+    public function area_calculation()
     {
         $this->assertEquals(6, $this->shape->area());
         $this->assertEquals(10, (new Shape(5,2))->area());
     }
+
+
 
 
 
