@@ -42,7 +42,7 @@ class Shape {
 
     public static function shapeType()
     {
-        return self::SHAPE_TYPE;
+        return static::SHAPE_TYPE;
     }
 
     public function getObject()
